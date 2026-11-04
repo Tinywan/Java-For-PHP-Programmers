@@ -1,0 +1,33 @@
+[book]
+authors = ["Java-For-PHP-Programmers Contributors"]
+language = "zh-CN"
+src = "src"
+title = "Java for PHP Programmers"
+description = "面向 PHP 开发者的 Java 进阶指南：从动态弱类型到静态强类型，从 Shared-Nothing 到企业级高并发与微服务架构"
+
+[build]
+build-dir = "book"
+create-missing = true
+
+[preprocessor.mermaid]
+command = "mdbook-mermaid"
+
+[output.html]
+git-repository-url = "https://github.com/Tinywan/Java-For-PHP-Programmers"
+edit-url-template = "https://github.com/Tinywan/Java-For-PHP-Programmers/edit/main/{path}"
+default-theme = "rust"
+preferred-dark-theme = "navy"
+mathjax-support = false
+additional-css = ["custom.css"]
+additional-js = ["custom.js"]
+
+[output.html.search]
+enable = true
+limit-results = 30
+teaser-word-count = 30
+use-boolean-and = true
+boost-title = 2
+boost-hierarchy = 1
+boost-paragraph = 1
+expand = true
+heading-split-level = 3
